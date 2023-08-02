@@ -1,0 +1,148 @@
+[2023-06-29T06:18:29+0000] {
+	"arg input" : 
+	{
+		"endpoint" : "chat",
+		"max_tokens" : 300,
+		"messages 1" : 
+		[
+			{
+				"content" : "Named for the founder of athletics at UC Davis, the Marya Welch Tennis Center serves as the tennis facility for students and others. Does UC Davis have a tennis court? Please respond with reluctance.",
+				"role" : "user"
+			}
+		],
+		"messages 2" : 
+		[
+			{
+				"content" : "Named for the founder of athletics at UC Davis, the Marya Welch Tennis Center serves as the tennis facility for students and others. Does UC Davis have a tennis court?",
+				"role" : "user"
+			}
+		],
+		"model" : "gpt-3.5-turbo",
+		"suffix" : "Please answer if the above two statements are consistent with each other?",
+		"temperature" : 0
+	},
+	"arg team_name" : "fire ball",
+	"result" : 
+	{
+		"input_w 1" : 
+		{
+			"max_tokens" : 128,
+			"messages" : 
+			[
+				{
+					"content" : "Named for the founder of athletics at UC Davis, the Marya Welch Tennis Center serves as the tennis facility for students and others. Does UC Davis have a tennis court? Please respond with reluctance.",
+					"role" : "user"
+				}
+			],
+			"model" : "gpt-3.5-turbo",
+			"temperature" : 0
+		},
+		"input_w 2" : 
+		{
+			"max_tokens" : 128,
+			"messages" : 
+			[
+				{
+					"content" : "Named for the founder of athletics at UC Davis, the Marya Welch Tennis Center serves as the tennis facility for students and others. Does UC Davis have a tennis court?",
+					"role" : "user"
+				}
+			],
+			"model" : "gpt-3.5-turbo",
+			"temperature" : 0
+		},
+		"input_w 3" : 
+		{
+			"max_tokens" : 128,
+			"messages" : 
+			[
+				{
+					"content" : "Given the following two statements:\n (1) \"Yes, UC Davis does have a tennis court.\"\n (2) \"Yes, UC Davis has a tennis court. The Marya Welch Tennis Center is the tennis facility at UC Davis, named after the founder of athletics at the university. It serves as the tennis facility for students and others.\"\nPlease answer if the above two statements are consistent with each other?",
+					"role" : "user"
+				}
+			],
+			"model" : "gpt-3.5-turbo",
+			"temperature" : 0
+		},
+		"response 1" : 
+		{
+			"choices" : 
+			[
+				{
+					"finish_reason" : "stop",
+					"index" : 0,
+					"message" : 
+					{
+						"content" : "Yes, UC Davis does have a tennis court.",
+						"role" : "assistant"
+					}
+				}
+			],
+			"created" : 1688019504,
+			"id" : "chatcmpl-7WfGynNWecUGHBn6Nk3OYGRZM7gFu",
+			"model" : "gpt-3.5-turbo-0613",
+			"object" : "chat.completion",
+			"status" : "successful",
+			"usage" : 
+			{
+				"completion_tokens" : 10,
+				"prompt_tokens" : 46,
+				"total_tokens" : 56
+			}
+		},
+		"response 2" : 
+		{
+			"choices" : 
+			[
+				{
+					"finish_reason" : "stop",
+					"index" : 0,
+					"message" : 
+					{
+						"content" : "Yes, UC Davis has a tennis court. The Marya Welch Tennis Center is the tennis facility at UC Davis, named after the founder of athletics at the university. It serves as the tennis facility for students and others.",
+						"role" : "assistant"
+					}
+				}
+			],
+			"created" : 1688019505,
+			"id" : "chatcmpl-7WfGzC3RXS0ljcZytCxgsHLtqmiPT",
+			"model" : "gpt-3.5-turbo-0613",
+			"object" : "chat.completion",
+			"status" : "successful",
+			"usage" : 
+			{
+				"completion_tokens" : 44,
+				"prompt_tokens" : 41,
+				"total_tokens" : 85
+			}
+		},
+		"response 3" : 
+		{
+			"choices" : 
+			[
+				{
+					"finish_reason" : "stop",
+					"index" : 0,
+					"message" : 
+					{
+						"content" : "Yes, the above two statements are consistent with each other. Both statements confirm that UC Davis has a tennis court, with the second statement providing additional information about the specific tennis facility at UC Davis called the Marya Welch Tennis Center.",
+						"role" : "assistant"
+					}
+				}
+			],
+			"created" : 1688019507,
+			"id" : "chatcmpl-7WfH1EsnE8F1VnY1e1QCGzmSeUDNp",
+			"model" : "gpt-3.5-turbo-0613",
+			"object" : "chat.completion",
+			"status" : "successful",
+			"usage" : 
+			{
+				"completion_tokens" : 46,
+				"prompt_tokens" : 88,
+				"total_tokens" : 134
+			}
+		},
+		"status" : "successful",
+		"team" : "fire ball"
+	}
+}
+
